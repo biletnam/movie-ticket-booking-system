@@ -1,0 +1,5 @@
+1498462811596	Rename field 'theaterController'
+1498463042132	Rename field 'theaterList'
+1498463078272	Rename method 'getTheaterById'
+1498465686669	Rename method 'getAllTheaters'
+1498468308751	Rename local variable 'movieController'

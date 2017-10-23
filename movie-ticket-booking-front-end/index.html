@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Ticket</title>
+    <!-- Latest compiled and minefield CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body ng-app="ticketBookingApp">
+
+<nav class="navbar navbar-inverse ">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><!-- Popcorn Time Filled icon by Icons8 -->
+                <img class="icon icons8-Popcorn-Time-Filled movieIcon" width="50" height="50" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAFFUlEQVRoQ91ZTW7bVhCeodTARQPU3rShVs4Jau9SS0CdXWAxiHOCqieIeoI6J4h8gqgniIxIRndRUMntLs4J4m7EthvbQNsErcgpRiIl8vH9kaKQIG8n8T2++eb3myHCR7LwI8EBawfie419APgGAPaJaBMRd2LlEdE5Il4BwBAQh+7zn18WVezagPjN+rcAcASI29bCEV0gYudWf3RsfSbaWDqQy8OdzXfTm8/YAnmFSVkqCB66P/16YfuOUoEwiLf/ffYi6T62goj7COCqGoZ3vzg9O7d5R6lAfK/xYhVLZAQmutj45O/drd45x5F2lQbEP9hrgeM8NV2Y9zlBeFzrn7VN56yA+PfubFOl8oi1vXAbIvbfIQTBY/blSbP+qgyXkgo8nd42xYsRyKRZf4KIWo0QUce0x6RR3XMi+r42GHd0e7RAJt5eB8FhS7zXRUQntcH4sBCQqJBx8L73xYWzNhjvFgPSrHcBkYvaB7Hc/kjrPcqHfrP+JldVXjPc4kC8Bq1ZtlyvLw6k2bgChM9z3bauzUS/uYOxlrPpXMscIwTXjhO0vnz+S++P+18fhmGlmwu8/fmXbn+k5W5qIPfubEO1+sag5LtufzSMqAk4GByHVGHCaLuszttUd20mMNGO2G99rzFkyVlrfo7YynH+sdsfHRVKv/Ghidd4hgCqYjTTaLx35l4FLGJ5XgtGb5Fm/SkgtlSaYKrthGHr1unZye8Hew9Cx+kiwKatX+U+r+Fc6hhZkc1WwnBX1kv8ebC3EzjOK1uwyX26WFEDmfs999qF1kb1ry1ZH8FM2iKJqO5UZi8lkInXuMzjJpKbpT7tew0O2h8KaWeeUKQy6yyycmVHgDZNpyfcS0SWmA8kVli5gUy8+jkCfrXCneUfJbh2ByNpMtFZZCUXKB8FABD96A7G0iyqBBJNRFpVomGcfbhHcTDYvFF5O+RA5j3/Bp/OqENZ/72b3pwN8OL6FPVF+0DQhmC6o2p5ja3uWjS7hpfqC6LX2CeAR1zZuXjNhg08DeRKzxNEHkAgdmdyEbXK+I8AelEftM9Zk38jwHGSQcj0oIsRdpkPotWNBE/RIRGMTUGc1YM4ZhDwSKTqBPS6GlKLY4l9moA6soyX3McVfupgN7OP4BoobG/c+KfHcZgYgGipvLGOiBU6YrpixU9pS1m9Ba6kGHCkBI5myZdRAlDKa7SIg8FDbpyWbFg6IsqYXUbnxWKmAJJiBAlGXdgiszoiEjVpjxKG37mnZ/Ogj5YVEBkxFd7lL6c5xWj8gqUSXbiD8e2EgLIkkLnECoiEd4msOZ7mqNh0LJehH4kGEFnfTvEwGb2WUJyMa8gmmUn3W8SahppYAZk06z1EfCDOXm2ElCSFDBBxD2e1Wn+8+DQ3adbbiPhER02sgMTxIM5eY4CJkDAKCQDGPcp7JDFoXUd4Y2xaruq1/mgrEScZQinJSGJjJnGtTM+TirVFT1TKZ4UlnV+kWFnaLAJEkhAyd4jupqJpRtKYCMiFtmQFL5Ntsq1yyiLSopnQfHyvzUyLwRmBxAVJHO372ZFqurqbgMy/vy+5nJCZ4i9gYkEubJFZrERDtyRdyWQldSGbk2PhW6DEPRcWs6UlSVBGi0RA5oGbEFZSA1KBKhkyaJ8ngaqypa6NsQIiy+eL/5ZvXwlIUkkxLbH5dmhVR+JNqwzVdFo0PTPRktyulXIv0+3lPTd+SigEpDz51vMmqxhZz9XlvvV/QhGBYHOpNUEAAAAASUVORK5CYII="></a>
+            <a class="navbar-brand" href="#">Movie Tickets</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="#">Movies</a></li>
+                <li><a href="#!/buy">Buy Tickets</a></li>
+                <li><a href="#!/view-tickets">My Tickets</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#!/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li><a href="#!/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div ng-view></div>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script  src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.6.4/angular-route.min.js"></script>
+<script type="text/javascript" src="./app.module.js"></script>
+<script type="text/javascript" src="./app.routes.js"></script>
+<script type="text/javascript" src="./modules/module.movie.js"></script>
+<script type="text/javascript" src="./modules/module.buy.js"></script>
+</body>
+</html>

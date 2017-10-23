@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/resturent" name="ResturentAPI" xmlns="http://ws.apache.org/ns/synapse">
+  <resource methods="GET" protocol="http">
+    <inSequence>
+      <log/>
+      <send>
+        <endpoint key="ResturentService"/>
+      </send>
+    </inSequence>
+    <outSequence/>
+    <faultSequence>
+      <send/>
+    </faultSequence>
+  </resource>
+</api>

@@ -1,0 +1,45 @@
+package com.it14031380.dsAssignment2.paymentService;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.ws.rs.*;
+
+@Path("/")
+public class PaymentService {
+	 public static Map<Integer, Map<String, Double>> cardInfo = new HashMap<>();
+
+	 PaymentService(){
+		 Payment p1 = new Payment();
+		 p1.setCardNo(123456789);
+		 p1.setAmount(100000);
+		 
+		 Payment p2 = new Payment();
+		 p2.setCardNo(123123123);
+		 p2.setAmount(0);
+		 
+		 Payment p3 = new Payment();
+		 p3.setCardNo(111222333);
+		 p3.setAmount(1000);
+		 
+		 Map<String,Double> m1 = new HashMap<String, Double>();
+		 m1.put("cardNo", (double) p1.getCardNo());
+		 m1.put("amount", (double) p1.getAmount());
+		 
+		 Map<String,Double> m2 = new HashMap<String, Double>();
+		 m1.put("cardNo", (double) p2.getCardNo());
+		 m1.put("amount", (double) p2.getAmount());
+		 
+		 Map<String,Double> m3 = new HashMap<String, Double>();
+		 m1.put("cardNo", (double) p3.getCardNo());
+		 m1.put("amount", (double) p3.getAmount());
+		 
+		 cardInfo.put(p1.getCardNo(), m1);	 
+		 cardInfo.put(p2.getCardNo(), m1);
+		 cardInfo.put(p3.getCardNo(), m1);
+		 
+	 
+	 }
+	 
+	 
+}

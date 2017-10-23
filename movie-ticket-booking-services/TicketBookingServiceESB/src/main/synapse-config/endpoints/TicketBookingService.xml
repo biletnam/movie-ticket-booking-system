@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="TicketBookingService" xmlns="http://ws.apache.org/ns/synapse">
+  <http method="get" trace="disable" uri-template="http://192.168.1.6:9763/TicketBookingService_1.0.0/services/ticket_booking_service"/>
+</endpoint>

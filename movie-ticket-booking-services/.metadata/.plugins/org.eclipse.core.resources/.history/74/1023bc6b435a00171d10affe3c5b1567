@@ -1,0 +1,27 @@
+package com.it14031380.dsAssignment2.restaurant.controllers;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import com.it14031380.dsAssignment2.restaurant.models.Restaurant;
+
+
+public class RestaurantController {
+	static RestaurantController restaurantController = null;
+	Map<Integer, Restaurant> resturentList = new HashMap<Integer, Restaurant>();
+	// Singleton pattern is used to eliminate conflicts
+	// Create and return single object
+	public static RestaurantController getTheaterController() {
+		if (restaurantController != null) {
+			return restaurantController;
+		} else {
+			restaurantController = new RestaurantController();
+			return restaurantController;
+		}
+	}
+
+	// Returns Theater object according to the id
+		public Restaurant getResaurantById(int id) {
+			return resturentList.get(id);
+		}
+}

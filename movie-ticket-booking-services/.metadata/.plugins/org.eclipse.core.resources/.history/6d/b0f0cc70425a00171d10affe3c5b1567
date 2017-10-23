@@ -1,0 +1,20 @@
+package com.it14031380.dsAssignment2.restaurant.models;
+
+public class Restaurant {
+	private String type;
+	private FoodItem foodItem;
+	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public FoodItem getFoodItem() {
+		return foodItem;
+	}
+	public void setFoodItem(FoodItem foodItem) {
+		this.foodItem = foodItem;
+	}
+	
+}

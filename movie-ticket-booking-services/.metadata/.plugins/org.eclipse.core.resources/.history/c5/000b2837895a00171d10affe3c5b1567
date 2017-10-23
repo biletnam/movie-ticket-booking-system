@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/movies" name="MovieServiceAPI" xmlns="http://ws.apache.org/ns/synapse">
+  <resource methods="GET" protocol="http">
+    <inSequence>
+      <log/>
+      <send/>
+    </inSequence>
+    <outSequence/>
+    <faultSequence>
+      <send/>
+    </faultSequence>
+  </resource>
+</api>

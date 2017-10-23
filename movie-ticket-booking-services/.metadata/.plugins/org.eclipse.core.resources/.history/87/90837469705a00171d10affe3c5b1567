@@ -1,0 +1,38 @@
+package com.it14031380.dsAssignment2.ticket.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.Response;
+
+@Path("/Ticket")
+public class TicketBookingService {
+	public static Map<String, Map<String, String>> employees = new HashMap<>();
+	
+	 @POST
+	    @Consumes("text/plain")
+	    @Produces("text/xml")
+	    @Path("/insert/query")
+	    public Response bookTicket(@QueryParam("ticketNo") String ticketNo,
+	         @QueryParam("name") String name,
+	         @QueryParam("designation") String designation,
+	         @QueryParam("salary") String salary) {
+	     ticketNo = ticketNo.trim();
+	     if (!employees.containsKey(ticketNo)) {
+	         Map<String, String> info = new HashMap<>();
+	         info.put("name", name);
+	         info.put("designation", designation);
+	         info.put("salary", salary);
+	         employees.put(ticketNo, info);
+	         Message msg = new Message();
+	         msg.setMessage("Successfully registered");
+	         return Response.ok(msg).build();
+	     }
+	     Message msg = new Message();
+	     msg.setMessage("Employee id already registered");
+	     return Response.ok(msg).build();
+	 
+	    }
+	
+}

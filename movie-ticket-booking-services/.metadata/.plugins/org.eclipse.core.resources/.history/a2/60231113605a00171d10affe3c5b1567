@@ -1,0 +1,13 @@
+package com.it14031380.dsAssignment2.paymentService;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.ws.rs.*;
+
+@Path("/")
+public class PaymentService {
+	 public static Map<String, Map<String, Double>> employees = new HashMap<>();
+
+	 
+}

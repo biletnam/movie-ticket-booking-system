@@ -1,0 +1,12 @@
+package com.it14031380.dsAssignment2.ticket.service;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.ws.rs.*;
+
+@Path("/Ticket")
+public class TicketBookingService {
+	public static Map<String, Map<String, String>> employees = new HashMap<>();
+	
+}

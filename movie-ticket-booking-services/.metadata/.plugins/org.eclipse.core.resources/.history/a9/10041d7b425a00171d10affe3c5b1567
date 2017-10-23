@@ -1,0 +1,19 @@
+package com.it14031380.dsAssignment2.restaurant.models;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Restaurant {
+	private String type;
+	private List<FoodItem> foodList = new ArrayList<FoodItem>();
+	
+	
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	
+	
+}

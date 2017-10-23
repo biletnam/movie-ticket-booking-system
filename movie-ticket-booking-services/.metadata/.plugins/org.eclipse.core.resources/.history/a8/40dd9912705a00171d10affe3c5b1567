@@ -1,0 +1,9 @@
+package com.it14031380.dsAssignment2.ticket.service;
+
+import javax.ws.rs.*;
+
+@Path("/")
+public class TicketBookingService {
+
+
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="MovieServiceEndPoint" groupId="com.example.MovieServiceESB.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/MovieServiceEndPoint.xml</file>
+    </artifact>
+    <artifact name="MovieServiceAPI" groupId="com.example.MovieServiceESB.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/MovieServiceAPI.xml</file>
+    </artifact>
+</artifacts>

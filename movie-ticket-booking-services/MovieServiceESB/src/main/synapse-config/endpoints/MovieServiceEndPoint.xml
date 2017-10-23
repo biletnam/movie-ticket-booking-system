@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="MovieServiceEndPoint" xmlns="http://ws.apache.org/ns/synapse">
+  <http method="get" trace="disable" uri-template="http://192.168.1.6:9763/MovieService_1.0.0/services/movie_service/movieservice/GetAllMovies"/>
+</endpoint>

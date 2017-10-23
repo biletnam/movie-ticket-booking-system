@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;map&apos; from expression &apos;(Map&lt;String,String&gt;)movies.get(id)&apos;&#x0D;&#x0A;- Original project: &apos;movieSystem&apos;&#x0D;&#x0A;- Variable name: &apos;map&apos;&#x0D;&#x0A;- Destination method: &apos;com.movie.jaxrs.service.MovieManagementServise.getEmployee()&apos;&#x0D;&#x0A;- Variable expression: &apos;(Map&lt;String,String&gt;)movies.get(id)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;map&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;com.movie.jaxrs.service{MovieManagementServise.java" name="map" replace="true" selection="1162 36" stamp="1498399994561" version="1.0"/>
+</session>

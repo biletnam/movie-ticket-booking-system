@@ -1,0 +1,33 @@
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
+}
+.movieIcon{
+    margin-top: -15px;
+}
+
+.panel-custom-color {
+    border-color: white;
+    background: #BE8A60;
+    color: whitesmoke;
+}
+.panel-custom-color > .panel-heading {
+    background: #2E2836;
+    color: white;
+    border-color: #2E2836;
+}
+.Fixed
+{
+    position: fixed;
+    width: 30%;
+    top: 150px;
+}

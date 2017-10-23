@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="ResturentService" groupId="com.example.ResturentService.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ResturentService.xml</file>
+    </artifact>
+    <artifact name="ResturentAPI" groupId="com.example.ResturentService.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/ResturentAPI.xml</file>
+    </artifact>
+</artifacts>

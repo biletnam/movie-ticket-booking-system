@@ -1,0 +1,15 @@
+2017-06-25 14:40:14,795 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.wso2.org/nexus/content/groups/wso2-public/com/thetransactioncompany/cors-filter/2.1/cors-filter-2.1.pom
+2017-06-25 14:40:15,141 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.wso2.org/nexus/content/groups/wso2-public/com/thetransactioncompany/cors-filter/2.1/cors-filter-2.1.pom
+2017-06-25 14:40:15,421 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.wso2.org/nexus/content/groups/wso2-public/com/thetransactioncompany/java-property-utils/1.9.1/java-property-utils-1.9.1.pom
+2017-06-25 14:40:15,588 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.wso2.org/nexus/content/groups/wso2-public/com/thetransactioncompany/java-property-utils/1.9.1/java-property-utils-1.9.1.pom
+2017-06-25 14:40:15,760 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.wso2.org/nexus/content/groups/wso2-public/com/thetransactioncompany/cors-filter/2.1/cors-filter-2.1.jar
+2017-06-25 14:40:17,466 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.wso2.org/nexus/content/groups/wso2-public/com/thetransactioncompany/cors-filter/2.1/cors-filter-2.1.jar
+2017-06-25 14:40:17,544 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://maven.wso2.org/nexus/content/groups/wso2-public/com/thetransactioncompany/java-property-utils/1.9.1/java-property-utils-1.9.1.jar
+2017-06-25 14:40:17,797 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://maven.wso2.org/nexus/content/groups/wso2-public/com/thetransactioncompany/java-property-utils/1.9.1/java-property-utils-1.9.1.jar
+2017-06-25 14:45:00,458 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\SLIIT Projects\DS\Programming Assignment 2\movie-ticket-booking-services\MovieService
+2017-06-25 14:45:00,460 [Worker-9] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2017-06-25 14:46:11,840 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-06-25 14:49:38,536 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\SLIIT Projects\DS\Programming Assignment 2\movie-ticket-booking-services\MovieService
+2017-06-25 14:49:38,537 [Worker-21] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2017-06-25 14:55:39,829 [Worker-26] INFO  o.e.m.i.launch.MavenLaunchDelegate - E:\SLIIT Projects\DS\Programming Assignment 2\movie-ticket-booking-services\MovieService
+2017-06-25 14:55:39,830 [Worker-26] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install

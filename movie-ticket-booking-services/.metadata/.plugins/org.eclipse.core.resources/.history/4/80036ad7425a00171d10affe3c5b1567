@@ -1,0 +1,21 @@
+package com.it14031380.dsAssignment2.restaurant.controllers;
+
+import com.it14031380.dsAssignment2.movie.controllers.TheaterController;
+
+
+
+public class RestaurantController {
+	static RestaurantController restaurantController = null;
+	
+	// Singleton pattern is used to eliminate conflicts
+		// Create and return single object
+		public static RestaurantController getTheaterController() {
+			if (restaurantController != null) {
+				return restaurantController;
+			} else {
+				restaurantController = new RestaurantController();
+				return restaurantController;
+			}
+		}
+		
+}

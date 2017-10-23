@@ -1,0 +1,5 @@
+package com.it14031380.dsAssignment2.paymentService;
+
+public class ResponceMessage {
+
+}

@@ -1,0 +1,9 @@
+package com.it14031380.dsAssignment2.paymentService;
+
+import javax.ws.rs.*;
+
+@Path("/")
+public class PaymentService {
+
+
+}

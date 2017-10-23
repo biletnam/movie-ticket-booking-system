@@ -1,0 +1,111 @@
+/*
+ * Student ID	: IT14031380
+ * Student Name : Perera P.D.S
+ * Distributed Systems
+ * Assignment 2 – Web Services
+ * */
+package com.it14031380.dsAssignment2.restaurant.controllers;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import com.it14031380.dsAssignment2.restaurant.models.FoodItem;
+import com.it14031380.dsAssignment2.restaurant.models.Restaurant;
+
+public class RestaurantController {
+	static RestaurantController restaurantController = null;
+	Map<Integer, Restaurant> restaurantFoodList = new HashMap<Integer, Restaurant>();
+	
+	public RestaurantController() {	
+		//-- Creating Food Types 1
+		Restaurant resturentType1 = new Restaurant();
+		resturentType1.setType("Snacks");
+		
+		//Creating some food items 
+		FoodItem foodItem1 = new FoodItem();
+		foodItem1.setName("Popcorn");
+		foodItem1.setAmount(50.00);
+		
+		FoodItem foodItem2 = new FoodItem();
+		foodItem2.setName("Popcorn with Hot Butter");
+		foodItem2.setAmount(70.00);
+		
+		FoodItem foodItem3 = new FoodItem();
+		foodItem3.setName("Chips");
+		foodItem3.setAmount(120);
+	
+		List<FoodItem> resturentType1FoodList = new ArrayList<FoodItem>();
+		resturentType1FoodList.add(foodItem1);
+		resturentType1FoodList.add(foodItem2);
+		resturentType1FoodList.add(foodItem3);
+		resturentType1.setFoodList(resturentType1FoodList);
+		
+		//-- Creating Food Types 2
+		Restaurant resturentType2 = new Restaurant();
+		resturentType2.setType("Bake");
+		
+		FoodItem foodItem4 = new FoodItem();
+		foodItem4.setName("Hot Dogs");
+		foodItem4.setAmount(150.00);
+		
+		FoodItem foodItem5 = new FoodItem();
+		foodItem5.setName("Cheese Burger");
+		foodItem5.setAmount(180);
+
+		List<FoodItem> resturentType2FoodList = new ArrayList<FoodItem>();
+		resturentType2FoodList.add(foodItem4);
+		resturentType2FoodList.add(foodItem5);
+		resturentType2.setFoodList(resturentType2FoodList);
+		//-- Creating Food Type 3
+		Restaurant resturentType3 = new Restaurant();
+		resturentType3.setType("Beverage");
+		
+		FoodItem foodItem6 = new FoodItem();
+		foodItem6.setName("Coca-Cola 180 ml");
+		foodItem6.setAmount(50.00);
+		
+		FoodItem foodItem7 = new FoodItem();
+		foodItem7.setName("Bubble Tea 150 ml");
+		foodItem7.setAmount(130.00);
+		
+		FoodItem foodItem8 = new FoodItem();
+		foodItem8.setName("Ice Cofee 170 ml");
+		foodItem8.setAmount(100.00);
+		
+		List<FoodItem> resturentType3FoodList = new ArrayList<FoodItem>();
+		resturentType3FoodList.add(foodItem6);
+		resturentType3FoodList.add(foodItem7);
+		resturentType3FoodList.add(foodItem8);
+		resturentType3.setFoodList(resturentType3FoodList);
+				
+		restaurantFoodList.put(1, resturentType1);
+		restaurantFoodList.put(2, resturentType2);
+		restaurantFoodList.put(3, resturentType3);
+
+	}
+
+	Map<Integer, Restaurant> resturentList = new HashMap<Integer, Restaurant>();
+
+	// Singleton pattern is used to eliminate conflicts
+	// Create and return single object
+	public static RestaurantController getTheaterController() {
+		if (restaurantController != null) {
+			return restaurantController;
+		} else {
+			restaurantController = new RestaurantController();
+			return restaurantController;
+		}
+	}
+
+	// Returns Restaurant object according to the id
+	public Restaurant getResaurantById(int id) {
+		return restaurantFoodList.get(id);
+	}
+
+	// Returns all Restaurant objects
+	public Map<Integer, Restaurant> getAllResturents() {
+		return restaurantFoodList;
+	}
+}

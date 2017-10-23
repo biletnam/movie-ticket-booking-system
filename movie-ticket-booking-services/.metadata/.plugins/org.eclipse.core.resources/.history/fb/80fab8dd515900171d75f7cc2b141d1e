@@ -1,0 +1,29 @@
+package com.it14031380.dsAssignment2.movie.models;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class Theater {
+	 private int id;
+     private String name;
+     private String location;
+     
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getLocation() {
+		return location;
+	}
+	public void setDescription(String description) {
+		this.location = description;
+	}
+}

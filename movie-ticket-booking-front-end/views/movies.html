@@ -1,0 +1,24 @@
+<div class="container" ng-controller="movieController">
+    <h1 >Movies</h1>
+
+
+    <ul class="list-group ">
+        <li class="list-group-item clearfix" ng-repeat=" movie in movies.movie">
+            <div class="col-lg-3">
+                <img ng-src="{{movie.imageUrl}}" class="img-responsive img-rounded" alt="Cinque Terre" >
+            </div>
+            <div class="col-lg-9">
+                <h2>{{movie.name}}</h2>
+                <h5 >Director : {{movie.director}}</h5>
+                <h3>{{movie.genre}}</h3>
+                <h5>{{movie.year}}</h5>
+                <p>{{movie.description}}</p>
+            </div>
+            <div>
+                <button type="button" class="btn btn btn-warning pull-right"><span
+                        class="glyphicon glyphicon-shopping-cart"></span> Buy Tickets</button>
+            </div>
+        </li>
+
+    </ul>
+</div>
